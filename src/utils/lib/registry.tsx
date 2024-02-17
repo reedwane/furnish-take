@@ -1,4 +1,3 @@
-// lib/registry.js
 // From https://nextjs.org/docs/app/building-your-application/styling/css-in-js#styled-components
 "use client";
 import React, { useState } from "react";

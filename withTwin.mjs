@@ -1,4 +1,3 @@
-// withTwin.mjs
 import babelPluginTypescript from "@babel/plugin-syntax-typescript";
 import babelPluginMacros from "babel-plugin-macros";
 import * as path from "path";
