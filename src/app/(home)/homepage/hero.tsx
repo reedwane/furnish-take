@@ -7,7 +7,7 @@ import { zonedTimeToUtc } from "date-fns-tz";
 const HomeHero = () => {
   const targetTimeZone = "Africa/Lagos"; // WAT is Africa/Lagos time zone
   const watDateTime = zonedTimeToUtc(
-    new Date(2023, 4, 20, 9, 0, 0),
+    new Date(2024, 4, 20, 9, 0, 0),
     targetTimeZone
   );
   const { days, hours, minutes, seconds } = useCountdown(watDateTime);
@@ -20,7 +20,7 @@ const HomeHero = () => {
   ];
 
   return (
-    <section tw="bg-secondary -mt-52 pt-52 text-white">
+    <section tw="bg-secondary bg-[url('/hero.png')] bg-center bg-cover bg-blend-overlay -mt-52 pt-52 text-white">
       <Maxwidth tw="">
         <div tw="px-5 lg:(px-20) pb-[73px] lg:(pb-[110px])">
           <div tw="relative w-fit">
@@ -46,7 +46,7 @@ const HomeHero = () => {
       </Maxwidth>
 
       <div tw="py-4 px-5 lg:(px-20 py-9) bg-gradient-to-r from-primary to-secondary">
-        <Maxwidth>
+        <Maxwidth tw="flex justify-between items-center">
           <div tw="w-fit">
             <Paragraph tw="w-full border-b border-primary">
               SEE YOU ON

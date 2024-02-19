@@ -24,13 +24,13 @@ const Header = () => {
     <header
       css={[
         isScrolled &&
-          tw`sticky top-0 z-[100] bg-secondary border-b-2 border-b-primary`,
+          tw`sticky top-0 z-[100] bg-secondary/20 border-b-2 border-b-primary`,
       ]}
     >
       <Maxwidth
         css={[
           tw`flex items-center font-medium p-5 justify-start md:(justify-between) xl:(px-0) z-[10] transition-all relative`,
-          isScrolled && tw`sticky top-0`,
+          isScrolled && tw`sticky top-0 blur-sm`,
         ]}
       >
         <MobileNav />
