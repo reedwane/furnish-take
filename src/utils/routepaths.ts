@@ -8,6 +8,9 @@ export const routePaths = {
   speakers: {
     path: "/speakers",
   },
+  sponsor: {
+    path: "/sponsor",
+  },
   bookLaunch: {
     path: "/book-launch",
   },
@@ -29,7 +32,7 @@ export const socials = {
   instagram: {
     path: "https://www.instagram.com/accuratecreativeminds",
   },
-  tiktok: {
+  twitter: {
     path: "http://tiktok.com/@accuratecreativeminds",
   },
 };
@@ -38,6 +41,13 @@ export const headerLinks = [
   { title: "OUR TEAM", href: routePaths.team.path },
   { title: "SPEAKERS", href: routePaths.speakers.path },
   { title: "BOOK LAUNCH", href: routePaths.bookLaunch.path },
+  { title: "CONTACT US", href: routePaths.contact.path },
+  { title: "FAQs", href: routePaths.faq.path },
+];
+
+export const footerLinks = [
+  { title: "OUR TEAM", href: routePaths.team.path },
+  { title: "SPONSOR", href: routePaths.sponsor.path },
   { title: "CONTACT US", href: routePaths.contact.path },
   { title: "FAQs", href: routePaths.faq.path },
 ];

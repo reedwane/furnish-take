@@ -6,6 +6,6 @@ const Maxwidth = styled.div(() => [
   tw`w-full px-6 max-w-[1280px] mx-auto xl:(px-0)!`,
 ]);
 
-export const MinHeight = tw.div`h-full min-h-[50vh]`;
+export const MinHeight = tw.div`h-full min-h-[60vh]`;
 
 export default Maxwidth;
