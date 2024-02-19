@@ -1,13 +1,9 @@
 "use client";
 
-import { Heading } from "@/components";
+import HomePageContainer from "./homepage/homePageContainer";
 
 const HomePage = () => {
-  return (
-    <main tw="bg-primary">
-      <Heading tw="text-white">TDNS Home.</Heading>
-    </main>
-  );
+  return <HomePageContainer />;
 };
 
 export default HomePage;

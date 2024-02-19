@@ -13,7 +13,7 @@ type ButtonMod<T extends ElementType> = {
 export const Button = styled.button<ButtonProps>(
   ({ $variant, $isSmall, $shadow = "dark", $disabled }) => [
     // The common button styles added with the tw import
-    tw`p-4 lg:px-6 text-center w-fit rounded-[0.75rem] font-semibold transform duration-75 bg-primary text-white hover:(bg-primaryLight) active:(bg-primaryLight) shadow-[4px_4px_0px_0px_#fff] lg:shadow-[8px_8px_0px_0px_#fff]`,
+    tw`p-4 lg:px-6 text-center w-fit rounded-[0.75rem] font-semibold text-xs md:(text-base) transform duration-75 bg-primary text-white hover:(bg-primaryLight) active:(bg-primaryLight) shadow-[4px_4px_0px_0px_#fff] lg:shadow-[8px_8px_0px_0px_#fff]`,
 
     css`
       &[type="submit"],
