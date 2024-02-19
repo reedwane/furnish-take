@@ -29,7 +29,7 @@ const Header = () => {
     >
       <Maxwidth
         css={[
-          tw`flex items-center font-medium py-2 px-6 justify-start md:(justify-between) lg:(py-8) xl:(px-0) z-[10] transition-all relative`,
+          tw`flex items-center font-medium p-5 justify-start md:(justify-between) xl:(px-0) z-[10] transition-all relative`,
           isScrolled && tw`sticky top-0`,
         ]}
       >

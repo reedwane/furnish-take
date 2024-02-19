@@ -3,16 +3,19 @@
 import Button from "@/components/Button";
 import Logo from "@/components/Logo";
 import { headerLinks } from "@/utils/routepaths";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import tw from "twin.macro";
 
 const DesktopNav = () => {
   const path = usePathname();
+  const isHome = path === "/";
 
   return (
-    <nav tw="hidden lg:flex relative items-center flex-1 justify-between text-[#454545]">
-      <Logo />
+    <nav
+      tw="hidden lg:flex relative items-center flex-1 justify-between"
+      css={[isHome && tw`text-white`]}
+    >
+      <Logo $light={isHome} />
 
       <ul tw="flex flex-row gap-[2rem] xl:gap-[3rem]">
         {headerLinks.map((link) => {
@@ -32,7 +35,7 @@ const DesktopNav = () => {
         })}
       </ul>
 
-      <Button>GET TICKETS</Button>
+      <Button $shadow={isHome ? "light" : "dark"}>GET TICKETS</Button>
     </nav>
   );
 };

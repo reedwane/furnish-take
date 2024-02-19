@@ -1,34 +1,36 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react'
-import Logo from '@/components/Logo'
-import { IoMdCloseCircle } from 'react-icons/io'
-import { FiMenu } from 'react-icons/fi'
-import tw from 'twin.macro'
-import { headerLinks } from '@/utils/routepaths'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { useState, useEffect } from "react";
+import Logo from "@/components/Logo";
+import { IoCloseOutline } from "react-icons/io5";
+import { FiMenu } from "react-icons/fi";
+import tw from "twin.macro";
+import { headerLinks } from "@/utils/routepaths";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Button } from "@/components";
 
 const MobileNav = () => {
-  const [menuOpen, setMenu] = useState(false)
-  const pathName = usePathname()
+  const [menuOpen, setMenu] = useState(false);
+  const pathName = usePathname();
+  const isHome = pathName === "/";
 
   useEffect(() => {
-    const body = document.querySelector('body')
+    const body = document.querySelector("body");
     if (body) {
       if (menuOpen) {
-        body.style.overflow = 'hidden'
+        body.style.overflow = "hidden";
       } else {
-        body.style.overflow = ''
+        body.style.overflow = "";
       }
     }
 
     return () => {
-      if (body) body.style.overflow = ''
-    }
-  }, [menuOpen])
+      if (body) body.style.overflow = "";
+    };
+  }, [menuOpen]);
 
-  const toggleMenu = () => setMenu(prev => !prev)
+  const toggleMenu = () => setMenu((prev) => !prev);
 
   return (
     <div
@@ -38,23 +40,23 @@ const MobileNav = () => {
       ]}
     >
       <div
-        css={[
-          tw`flex justify-between text-primary`,
-          menuOpen && tw`border-b-[1px] px-8 py-4`,
-        ]}
+        css={[tw`flex justify-between text-primary`, menuOpen && tw`px-8 py-4`]}
       >
-        <Logo />
+        <Logo $light={isHome} />
 
-        <button title="mobile-menu-button" onClick={toggleMenu}>
-          {menuOpen ? <IoMdCloseCircle size={30} /> : <FiMenu size={30} />}
+        <button
+          title="mobile-menu-button"
+          onClick={toggleMenu}
+          css={[isHome && !menuOpen ? tw`text-white` : tw`text-secondary`]}
+        >
+          {menuOpen ? <IoCloseOutline size={30} /> : <FiMenu size={30} />}
         </button>
       </div>
 
       <nav
         css={[
           tw`flex-col font-normal transition lg:hidden`,
-          menuOpen &&
-            tw`flex bg-primaryLight w-full h-full text-[#454545] gap-8 p-10`,
+          menuOpen && tw`flex w-full h-full text-secondary gap-6 p-5`,
           !menuOpen && tw`text-[white] gap-0 h-0 p-0 overflow-hidden`,
         ]}
       >
@@ -62,11 +64,10 @@ const MobileNav = () => {
           css={[
             tw`transition`,
 
-            menuOpen &&
-              tw`flex flex-col flex-1 gap-6 text-[1.25rem] py-8 overflow-y-auto`,
+            menuOpen && tw`flex flex-col flex-1 gap-6 py-8 overflow-y-auto`,
           ]}
         >
-          {headerLinks.map(link => (
+          {headerLinks.map((link) => (
             <Link
               href={link.href}
               key={link.title}
@@ -81,10 +82,12 @@ const MobileNav = () => {
               {link.title}
             </Link>
           ))}
+
+          <Button tw="mt-4">GET TICKETS</Button>
         </ul>
       </nav>
     </div>
-  )
-}
+  );
+};
 
-export default MobileNav
+export default MobileNav;
