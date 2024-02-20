@@ -17,19 +17,48 @@ const headingVariants: Record<HeadingVariant, TwStyle> = {
 };
 
 export const Heading = styled.h1<HeadingProps>(({ $variant = "h1" }) => [
-  tw`font-semibold`,
+  tw`font-semibold w-fit`,
   headingVariants[$variant],
 ]);
 
-interface IFancyHeader extends HTMLProps<HTMLHeadingElement> {
-  ordinary: string;
-  colored: string;
+export const afterUnderline = tw`after:(block content-[''] relative -bottom-2 w-6/12 h-1 md:(-bottom-4 h-[6px]) bg-primaryLight)`;
+
+interface IFancyHeader extends HTMLProps<HTMLHeadingElement>, HeadingProps {
+  primary?: string;
+  secondary: string;
+  primaryStyles?: TwStyle;
+  secondaryStyles?: TwStyle;
+  headingStyles?: TwStyle;
 }
 
-export const FancyHeader = ({ ordinary, colored, ...rest }: IFancyHeader) => {
+export const FancyHeader = ({
+  primary,
+  secondary,
+  as = "h2",
+  $variant = "h2",
+  headingStyles,
+  primaryStyles,
+  secondaryStyles,
+  css,
+  ...rest
+}: IFancyHeader) => {
   return (
-    <Heading $variant="h2" as="h2" {...rest}>
-      {ordinary} <span tw="text-primary">{colored}</span>
+    <Heading $variant={$variant} as={as} css={[css, headingStyles]} {...rest}>
+      {primary ? (
+        <span
+          tw="text-primary block pb-3 lg:(pb-6)"
+          css={[headingVariants["h3"], primaryStyles]}
+        >
+          {primary}
+        </span>
+      ) : null}
+
+      <span
+        tw="text-secondary block w-fit"
+        css={[afterUnderline, secondaryStyles]}
+      >
+        {secondary}
+      </span>
     </Heading>
   );
 };
