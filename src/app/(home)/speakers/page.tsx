@@ -3,7 +3,7 @@
 import { Button, Heading, Maxwidth, Paragraph } from "@/components";
 
 
-const OurTeamPage = () => {
+const SpeakersPage = () => {
   return (
     <div>
       <div tw="bg-secondary text-white border-b-2 border-b-secondary bg-[url('/waves.png')] bg-cover bg-center">
@@ -43,4 +43,4 @@ const OurTeamPage = () => {
   )
 };
 
-export default OurTeamPage;
+export default SpeakersPage;
