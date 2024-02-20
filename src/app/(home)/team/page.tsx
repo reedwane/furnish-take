@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Heading, Maxwidth, Paragraph } from "@/components";
+import { Button, FancyHeader, Heading, Maxwidth, Paragraph } from "@/components";
 
 
 const OurTeamPage = () => {
@@ -8,6 +8,9 @@ const OurTeamPage = () => {
     <div>
       <div tw="bg-secondary text-white border-b-2 border-b-secondary bg-[url('/waves.png')] bg-cover bg-center">
         <Maxwidth tw="p-8 px-5 md:(flex-row justify-start gap-20) xl:(px-0) uppercase">
+          <FancyHeader primary="ABOUT THE DEEN" secondary="NETWORKING SUMMIT"
+            secondaryStyles={{"text-lightGrey":"h"}}
+          />
           <Heading $variant="h4" as="h1">
             <span tw="text-primaryLight">Meet our</span>
             <br/>
@@ -24,7 +27,7 @@ const OurTeamPage = () => {
           </Paragraph>
           <div tw="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {[...Array(12)].map(()=>(
-              <Button as="div" tw='p-0 w-full max-md:max-w-[300px] mx-auto divide-y divide-secondary border border-secondary rounded-lg'>
+              <Button as="div" tw='!p-0 w-full max-md:max-w-[300px] mx-auto divide-y divide-secondary border border-secondary rounded-lg'>
                 <div tw="bg-primary rounded-t-lg min-h-[200px] text-secondary space-y-2 text-left">
 
                 </div>
