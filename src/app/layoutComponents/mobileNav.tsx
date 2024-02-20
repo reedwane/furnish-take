@@ -42,7 +42,10 @@ const MobileNav = () => {
       <div
         css={[tw`flex justify-between text-primary`, menuOpen && tw`px-8 py-4`]}
       >
+
+      <Link href="/">
         <Logo $light={isHome && !menuOpen} />
+      </Link>
 
         <button
           title="mobile-menu-button"
