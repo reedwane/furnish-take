@@ -7,16 +7,16 @@ import { zonedTimeToUtc } from "date-fns-tz";
 const HomeHero = () => {
   const targetTimeZone = "Africa/Lagos"; // WAT is Africa/Lagos time zone
   const watDateTime = zonedTimeToUtc(
-    new Date(2024, 4, 20, 9, 0, 0),
+    new Date(2024, 3, 20, 9, 0, 0),
     targetTimeZone
   );
   const { days, hours, minutes, seconds } = useCountdown(watDateTime);
 
   const countDownMap = [
-    { value: days, label: "DAYS" },
-    { value: hours, label: "HOURS" },
-    { value: minutes, label: "MINUTES" },
-    { value: seconds, label: "SECONDS" },
+    { value: days ?? 0, label: "DAYS" },
+    { value: hours ?? 0, label: "HOURS" },
+    { value: minutes ?? 0, label: "MINUTES" },
+    { value: seconds ?? 0, label: "SECONDS" },
   ];
 
   return (
@@ -47,18 +47,22 @@ const HomeHero = () => {
 
       <div tw="py-4 px-5 lg:(px-20 py-9) bg-gradient-to-r from-primary to-secondary">
         <Maxwidth tw="flex justify-between items-center">
-          <div tw="w-fit">
-            <Paragraph tw="w-full border-b border-primary">
+          <div tw="w-fit font-semibold">
+            <Paragraph tw="w-full border-b-2 border-primaryLight">
               SEE YOU ON
             </Paragraph>
             <Paragraph>April 20, Adebisi Hall,Ibadan,Nigeria.</Paragraph>
           </div>
 
-          <div tw="flex gap-3.5 flex-wrap lg:(gap-12)">
+          <div tw="flex gap-3.5 flex-wrap xl:(gap-12)">
             {countDownMap.map((entry, idx) => (
               <div key={idx}>
-                <Heading $variant="h2">{entry.value}</Heading>
-                <Heading $variant="h3">{entry.label}</Heading>
+                <Heading $variant="h2" tw="font-medium pb-2 text-center">
+                  {entry.value}
+                </Heading>
+                <Heading $variant="h4" tw="font-medium">
+                  {entry.label}
+                </Heading>
               </div>
             ))}
           </div>
