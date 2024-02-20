@@ -23,6 +23,8 @@ export const Heading = styled.h1<HeadingProps>(({ $variant = "h1" }) => [
 
 export const afterUnderline = tw`after:(block content-[''] relative -bottom-2 w-6/12 h-1 md:(-bottom-4 h-[6px]) bg-primaryLight)`;
 
+export const primaryShadow = tw`shadow-[4px_4px_0px_0px] shadow-primaryLight lg:(shadow-[8px_8px_0px_0px] shadow-primaryLight)`;
+
 interface IFancyHeader extends HTMLProps<HTMLHeadingElement>, HeadingProps {
   primary?: string;
   secondary: string;

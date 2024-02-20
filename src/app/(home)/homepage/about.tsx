@@ -1,7 +1,11 @@
 "use client";
 
 import { Heading, Logo, Maxwidth, Paragraph } from "@/components";
-import { FancyHeader, afterUnderline } from "@/components/heading";
+import {
+  FancyHeader,
+  afterUnderline,
+  primaryShadow,
+} from "@/components/heading";
 import tw from "twin.macro";
 
 const AboutTDNS = () => {
@@ -56,7 +60,10 @@ const AboutTDNS = () => {
             key={expectation}
             tw="flex items-center gap-6 font-semibold lg:(gap-10 text-xl)"
           >
-            <div tw="w-5 min-w-[20px] h-5 rounded-lg bg-secondary shadow-[4px_4px_0px_0px] shadow-primaryLight lg:(shadow-[8px_8px_0px_0px] shadow-primaryLight border border-primaryLight min-w-[54px] h-[54px] rounded-xl)" />{" "}
+            <div
+              tw="w-5 min-w-[20px] h-5 rounded-lg bg-secondary lg:(border border-primaryLight min-w-[54px] h-[54px] rounded-xl)"
+              css={[primaryShadow]}
+            />{" "}
             {expectation}
           </Paragraph>
         ))}
