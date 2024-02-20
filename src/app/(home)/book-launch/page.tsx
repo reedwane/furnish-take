@@ -25,9 +25,21 @@ const BookLaunch = () => {
               <div>
                 <FancyHeader primary="THE" secondary="BOOK" />
               </div>
-              <Paragraph>
-                Love is one of the most important connections in a Muslim's life, which is why The Deen Networking Summit is featuring the launch learn event for <span tw="text-2xl text-secondary font-bold">Before You Fall in Love: A Brief Guide to Falling in Love the Islamic Way</span>. It is a comprehensive guide for young people who want to navigate the journey of love with caution.
-              </Paragraph>
+              <div tw="max-md:grid grid-cols-2 gap-6">
+                <Paragraph tw="">
+                  Love is one of the most important connections in a Muslim's life, which is why The Deen Networking Summit is featuring the launch learn event for <span tw="text-2xl text-secondary font-bold">Before You Fall in Love: A Brief Guide to Falling in Love the Islamic Way</span>. <span tw="max-md:hidden">
+                    It is a comprehensive guide for young people who want to navigate the journey of love with caution.
+                  </span>
+                </Paragraph>
+                <div tw="md:hidden">
+                  <div tw="max-w-[286px] py-12 grid place-items-center bg-[url('/Stars.png')]">
+                    <img  src="/Book cover.png" alt="Before you fall in love book cover" />
+                  </div>
+                </div>
+              </div>
+              <span tw="md:hidden">
+                It is a comprehensive guide for young people who want to navigate the journey of love with caution.
+              </span>
               <Paragraph>
                 How to get the Book: Obtain the ticket for The Deen Networking Summit and your copy of the book will be........
               </Paragraph>
