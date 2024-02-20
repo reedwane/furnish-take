@@ -21,7 +21,7 @@ const BookLaunch = () => {
       <section>
         <Maxwidth tw="py-8 space-y-8">
           <div tw="grid md:grid-cols-3 gap-12 items-center">
-            <div tw="col-span-2 space-y-12">
+            <div tw="md:col-span-2 space-y-12">
               <div>
                 <FancyHeader primary="THE" secondary="BOOK" />
               </div>
@@ -50,7 +50,7 @@ const BookLaunch = () => {
       <section>
         <Maxwidth tw="py-8 space-y-8">
           <div tw="grid md:grid-cols-3 gap-12 items-center">
-            <div tw="col-span-2 space-y-12">
+            <div tw="md:col-span-2 space-y-12">
               <div>
                 <FancyHeader primary="ABOUT" secondary="THE AUTHOR" />
               </div>
