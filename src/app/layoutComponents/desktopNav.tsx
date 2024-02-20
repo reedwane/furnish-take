@@ -3,7 +3,8 @@
 import Button from "@/components/Button";
 import Logo from "@/components/Logo";
 import { headerLinks } from "@/utils/routepaths";
-import { usePathname } from "next/navigation";
+import { usePathname  } from "next/navigation";
+import Link from "next/link"
 import tw from "twin.macro";
 
 const DesktopNav = () => {
@@ -15,7 +16,9 @@ const DesktopNav = () => {
       tw="hidden lg:flex relative items-center flex-1 justify-between"
       css={[isHome && tw`text-white`]}
     >
-      <Logo $light={isHome} />
+      <Link href="/">
+        <Logo $light={isHome} />
+      </Link>
 
       <ul tw="flex flex-row gap-[2rem] xl:gap-[3rem]">
         {headerLinks.map((link) => {
