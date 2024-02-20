@@ -51,7 +51,7 @@ const HomeHero = () => {
             <Paragraph tw="w-full border-b-2 border-primaryLight">
               SEE YOU ON
             </Paragraph>
-            <Paragraph>April 20, Adebisi Hall,Ibadan,Nigeria.</Paragraph>
+            <Paragraph>April 20, Adebisi Hall, Ibadan, Nigeria.</Paragraph>
           </div>
 
           <div tw="flex gap-3.5 flex-wrap xl:(gap-12)">
