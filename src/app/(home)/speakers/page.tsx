@@ -23,11 +23,13 @@ const SpeakersPage = () => {
           <Paragraph>
             From visionary founders to accomplished business leaders and esteemed Islamic scholars. TDNS gathers an exceptional lineup of speakers, each offering unique insights and expertise.
           </Paragraph>
-          <div tw="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[...Array(12)].map(()=>(
-              <PersonCard />
+          <ul tw="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[...Array(12)].map((_, index)=>(
+              <li key={index} >
+                <PersonCard />
+              </li>
             ))}
-          </div>
+          </ul>
         </Maxwidth>
       </section>
     </div>

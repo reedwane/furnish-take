@@ -23,11 +23,13 @@ const OurTeamPage = () => {
           <Paragraph>
             Meet our diverze team of  designers, developers, writers, event managers working together to make the  Deen Networking Summit a success.
           </Paragraph>
-          <div tw="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[...Array(12)].map(()=>(
-              <PersonCard />
+          <ul tw="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[...Array(12)].map((_, index)=>(
+              <li key={index} >
+                <PersonCard />
+              </li>
             ))}
-          </div>
+          </ul>
         </Maxwidth>
       </section>
     </div>
