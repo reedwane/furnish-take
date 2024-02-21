@@ -12,6 +12,7 @@ const Cover = tw.div`h-8 w-8 max-w-fit`
 
 export const LoadingSvg = ({ color, ...props }: LoadingSvgProps) => {
   return (
+    // @ts-ignore
     <Cover {...props}>
       <svg
         viewBox="0 0 24 24"

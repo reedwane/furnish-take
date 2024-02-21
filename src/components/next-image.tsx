@@ -21,6 +21,7 @@ const NextImage = ({
   const cover = tw`object-cover`
   const contain = tw`object-contain`
   return (
+    // @ts-ignore
     <Cover {...rest}>
       <Image
         src={src}
