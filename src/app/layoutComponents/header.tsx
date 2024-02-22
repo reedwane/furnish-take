@@ -24,7 +24,7 @@ const Header = () => {
     <header
       css={[
         isScrolled &&
-          tw`sticky top-0 z-[100] bg-secondary/70 border-b-2 border-b-primary`,
+          tw`sticky top-0 z-[100] bg-secondary/70 border-b-2 border-b-primary text-white backdrop-blur-sm`,
       ]}
     >
       <Maxwidth
