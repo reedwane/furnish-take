@@ -42,7 +42,7 @@ const ContactPage = () => {
       <div>
         <div tw="grid md:grid-cols-2 gap-12">
             <div
-              tw="bg-secondary rounded-xl p-6 text-white space-y-6 flex flex-col justify-between"
+              tw="bg-secondary rounded-xl p-6 break-all  text-white space-y-6 flex flex-col justify-between"
             >
               <div tw="space-y-12">
               <Heading $variant="h4" as={"h2"}>
