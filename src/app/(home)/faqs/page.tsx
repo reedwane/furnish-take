@@ -2,23 +2,30 @@
 
 import { Button, FancyHeader, Heading, Maxwidth, Paragraph } from "@/components";
 import PersonCard from "@/components/PersonCard";
-
-const faqs = [
-  {
-    question: "Is there opportunity for exhibition at the event?",
-    answer: "lorem",
-    is_opne: false
-  },
-  {
-    question: "Is there opportunity for exhibition at the event?",
-    answer: "lorem",
-    is_opne: false
-  },
-]
-
-
+import { useState } from "react";
+import tw from "twin.macro";
 
 const FAQsPage = () => {
+const [faqs, setFaqs] = useState([
+  {
+    question: "Is there opportunity for exhibition at the event?",
+    answer: "lorem",
+    is_open: false
+  },
+  {
+    question: "Is there opportunity for exhibition at the event?",
+    answer: "lorem",
+    is_open: false
+  },
+])
+
+function toggleFaq(index:number){
+  const _faqs = [ ...faqs ]
+  _faqs[index].is_open = !_faqs[index].is_open
+  setFaqs(_faqs)
+}
+
+
   return (
     <div tw="space-y-12 pb-12">
       <div tw="bg-secondary text-white border-b-2 border-b-secondary bg-[url('/waves.png')] bg-cover bg-center">
@@ -35,14 +42,15 @@ const FAQsPage = () => {
         <div tw="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <ul tw="space-y-8">
-                {faqs.map(faq=>(
-                <li tw="pb-8 border-b-2 border-secondary text-secondary">
-                    <button tw="flex items-center justify-between w-full">
+                {faqs.map((faq,index)=>(
+                <li tw="pb-8 border-b-2 border-secondary text-secondary" key={index}>
+                    <button tw="flex items-center justify-between w-full" onClick={()=>toggleFaq(index)}>
                       <p>
-                        {faq.question} 
+                        {faq.question}  
                       </p>
-                      <span>&times;</span>
+                      <img src="/icons/arrow-down.svg" alt="" css={[!faq.is_open&& tw`rotate-180`]} tw="transition-transform" />
                     </button>
+                    <p css={[!faq.is_open&& tw`max-h-0`]} tw="font-semibold mt-2 overflow-hidden transition-all">{faq.answer}</p>
                   </li>
                 ))}
               </ul>
