@@ -70,11 +70,13 @@ const Footer = () => {
 
                   return (
                     <li
-                      key={link.title}
-                      tw="flex items-center justify-center rounded-full bg-primary w-7 h-7 p-1"
-                    >
-                      <Icon size={20} />
-                    </li>
+                        key={link.title}
+                        tw="flex items-center justify-center rounded-full bg-primary w-12 aspect-square p-1"
+                      >
+                        <a target="_blank" href={link.link}>
+                        <Icon size={20} />
+                        </a>
+                      </li>
                   );
                 })}
               </ul>
