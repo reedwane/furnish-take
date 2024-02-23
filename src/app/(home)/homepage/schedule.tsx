@@ -8,13 +8,13 @@ const EventSchedule = () => {
     <Maxwidth tw="py-8 px-5 md:(px-8) lg:(pt-20 pb-16)">
       <FancyHeader primary="EVENT" secondary="SCHEDULE" />
 
-      <div tw="pt-6 md:(pt-10) lg:(pt-14) flex flex-wrap gap-8">
+      <div tw="pt-6 md:(pt-10) lg:(pt-14) flex overflow-x-auto gap-8 pb-4 lg:(pb-8)">
         {schedule.map((item, idx) => {
           const { time, type, venue, title, sub } = item;
           return (
             <div
               key={idx}
-              tw="bg-secondary rounded-xl p-6 text-white max-w-[300px] lg:(max-w-[493px])"
+              tw="bg-secondary rounded-xl p-6 text-white min-w-[300px] lg:(min-w-[493px])"
               css={[primaryShadow]}
             >
               <Paragraph tw="text-[8px] pb-3 lg:(text-sm)">
