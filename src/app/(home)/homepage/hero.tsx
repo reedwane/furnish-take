@@ -20,14 +20,17 @@ const HomeHero = () => {
   ];
 
   return (
-    <section tw="bg-secondary bg-[url('/hero.png')] bg-center bg-cover bg-blend-overlay -mt-52 pt-52 text-white">
-      <Maxwidth tw="">
-        <div tw="px-5 lg:(px-20) pb-[73px] lg:(pb-[110px])">
+    <section tw="bg-secondary bg-[url('/hero.png')] bg-center bg-cover relative -mt-52 pt-52 text-white">
+      <div tw="absolute top-0 left-0 w-full h-full bg-secondary/70 z-[0]" />
+
+      <Maxwidth tw="z-[1] relative">
+        <div tw="xl:(px-20) pb-[73px] lg:(pb-[110px])">
           <div tw="relative w-fit">
-            <Heading>
-              THE DEEN <span tw="block text-primary">NETWORKING</span> SUMMIT
+            <Heading tw="max-sm:text-4xl">
+              THE DEEN <span tw="block text-primaryLight">NETWORKING</span>{" "}
+              SUMMIT
             </Heading>
-            <Paragraph tw="text-xs absolute bottom-0 -right-8 md:(right-8 bottom-8) lg:(right-20) text-primary lg:text-xl">
+            <Paragraph tw="text-xs min-[428px]:(absolute bottom-0 -right-20) md:(right-8 bottom-8) lg:(right-20) text-primaryLight lg:text-xl">
               THEME: <br />
               Paths to lasting connections
             </Paragraph>
@@ -45,22 +48,27 @@ const HomeHero = () => {
         </div>
       </Maxwidth>
 
-      <div tw="py-4 px-5 lg:(px-20 py-9) bg-gradient-to-r from-primary to-secondary">
-        <Maxwidth tw="flex justify-between items-center">
+      <div tw="py-4 xl:(px-20 py-9) bg-gradient-to-r from-primary to-secondary relative z-[1]">
+        <Maxwidth tw="flex justify-between gap-2 items-center">
           <div tw="w-fit font-semibold">
-            <Paragraph tw="w-full border-b-2 border-primaryLight">
+            <Paragraph tw="max-sm:text-[8px] w-full border-b-2 border-primaryLight">
               SEE YOU ON
             </Paragraph>
-            <Paragraph>April 20, Adebisi Hall, Ibadan, Nigeria.</Paragraph>
+            <Paragraph tw="max-sm:text-[8px]">
+              April 20, Adebisi Hall, Ibadan, Nigeria.
+            </Paragraph>
           </div>
 
-          <div tw="flex gap-3.5 flex-wrap xl:(gap-12)">
+          <div tw="flex flex-1 justify-end gap-3.5 flex-wrap xl:(gap-12)">
             {countDownMap.map((entry, idx) => (
               <div key={idx}>
-                <Heading $variant="h2" tw="font-medium pb-2 text-center">
+                <Heading
+                  $variant="h2"
+                  tw="max-sm:text-lg font-medium md:pb-2 w-full text-center"
+                >
                   {entry.value}
                 </Heading>
-                <Heading $variant="h4" tw="font-medium">
+                <Heading $variant="h4" tw="max-sm:text-[8px] font-medium">
                   {entry.label}
                 </Heading>
               </div>

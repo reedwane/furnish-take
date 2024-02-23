@@ -14,7 +14,10 @@ interface LogoProps extends HTMLProps<HTMLDivElement> {
 
 const Logo = ({ $asHomeNav, $light, css, ...props }: LogoProps) => {
   const RenderComp = () => (
-    <div css={[tw`w-[93px] min-w-[60px] h-[118px]`, css]} {...props}>
+    <div
+      css={[tw`w-[54px] min-w-[54px] sm:w-[93px] sm:min-w-[60px]`, css]}
+      {...props}
+    >
       <Image src={$light ? logoLight : logo} alt="tdns-logo" />
     </div>
   );
