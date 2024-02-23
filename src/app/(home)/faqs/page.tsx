@@ -39,12 +39,12 @@ function toggleFaq(index:number){
       </div>
       <Maxwidth >
       <div>
-        <div tw="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+        <div tw="grid md:grid-cols-2 gap-12 items-center relative">
+            <div tw="relative">
               <ul tw="space-y-8">
                 {faqs.map((faq,index)=>(
                 <li tw="pb-8 border-b-2 border-secondary text-secondary" key={index}>
-                    <button tw="flex items-center justify-between w-full" onClick={()=>toggleFaq(index)}>
+                    <button tw="text-left flex items-center justify-between w-full" onClick={()=>toggleFaq(index)}>
                       <p>
                         {faq.question}  
                       </p>
@@ -55,9 +55,8 @@ function toggleFaq(index:number){
                 ))}
               </ul>
             </div>
-            <div tw="max-md:hidden grid place-items-center">
+            <div tw="max-md:pointer-events-none max-md:absolute inset-0 grid place-items-center max-md:opacity-10">
               <img src="/chat.svg" alt="" />
-
             </div>
         </div>
       </div>
