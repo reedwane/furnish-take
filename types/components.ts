@@ -5,3 +5,7 @@ interface ButtonProps {
   $isLoading?: boolean;
   $disabled?: boolean;
 }
+
+interface IHeaderProps {
+  isScrolled: boolean;
+}

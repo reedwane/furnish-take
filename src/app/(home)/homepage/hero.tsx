@@ -49,7 +49,7 @@ const HomeHero = () => {
       </Maxwidth>
 
       <div tw="py-4 xl:(px-20 py-9) bg-gradient-to-r from-primary to-secondary relative z-[1]">
-        <Maxwidth tw="flex justify-between gap-2 items-center">
+        <Maxwidth tw="flex justify-between gap-2 items-center px-2 min-[428px]:(px-4)">
           <div tw="w-fit font-semibold">
             <Paragraph tw="max-sm:text-[8px] w-full border-b-2 border-primaryLight">
               SEE YOU ON
@@ -59,7 +59,7 @@ const HomeHero = () => {
             </Paragraph>
           </div>
 
-          <div tw="flex flex-1 justify-end gap-3.5 flex-wrap xl:(gap-12)">
+          <div tw="flex flex-1 justify-end gap-2 min-[428px]:(gap-3.5) md:(gap-10) flex-wrap xl:(gap-12)">
             {countDownMap.map((entry, idx) => (
               <div key={idx}>
                 <Heading

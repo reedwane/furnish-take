@@ -5,17 +5,28 @@ import logo from "/public/logo.png";
 import logoLight from "/public/logo-light.png";
 import { HTMLProps } from "react";
 import Link from "next/link";
-import tw from "twin.macro";
+import tw, { TwStyle } from "twin.macro";
 
 interface LogoProps extends HTMLProps<HTMLDivElement> {
   $asHomeNav?: boolean;
   $light?: boolean;
+  containerStyles?: TwStyle;
 }
 
-const Logo = ({ $asHomeNav, $light, css, ...props }: LogoProps) => {
+const Logo = ({
+  $asHomeNav,
+  $light,
+  css,
+  containerStyles,
+  ...props
+}: LogoProps) => {
   const RenderComp = () => (
     <div
-      css={[tw`w-[54px] min-w-[54px] sm:w-[93px] sm:min-w-[60px]`, css]}
+      css={[
+        tw`w-[54px] min-w-[54px] sm:min-w-[60px] lg:w-[93px]`,
+        containerStyles,
+        css,
+      ]}
       {...props}
     >
       <Image src={$light ? logoLight : logo} alt="tdns-logo" />
