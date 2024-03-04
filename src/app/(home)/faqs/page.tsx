@@ -6,18 +6,33 @@ import { useState } from "react";
 import tw from "twin.macro";
 
 const FAQsPage = () => {
-const [faqs, setFaqs] = useState([
-  {
-    question: "Is there opportunity for exhibition at the event?",
-    answer: "lorem",
-    is_open: false
-  },
-  {
-    question: "Is there opportunity for exhibition at the event?",
-    answer: "lorem",
-    is_open: false
-  },
-])
+  const [faqs, setFaqs] = useState([
+    {
+      question: "Is there opportunity for exhibition at the event?",
+      answer: "lorem",
+      is_open: false
+    },
+    {
+      question: "Is The Deen Networking Summit holding physically or virtually?",
+      answer: "lorem",
+      is_open: false
+    },
+    {
+      question: "Do you say I will get a match at The Deen Networking Summit?",
+      answer: "lorem",
+      is_open: false
+    },
+    {
+      question: "When and where is The Deen Networking Summit holding?",
+      answer: "lorem",
+      is_open: false
+    },
+    {
+      question: "Is The Deen Networking Summit a paid event?",
+      answer: "lorem",
+      is_open: false
+    }
+  ])
 
 function toggleFaq(index:number){
   const _faqs = [ ...faqs ]
