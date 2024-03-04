@@ -8,7 +8,7 @@ const OurTeamPage = () => {
   const team_members = [
     {name:"Abass Abdul-Azeez", position: "Convener", image:"", instagram:"test", x:"test", linkedin:"test"},
     {name:"Sheriffdeen Oladimeji", position:"Communications Team", image:"/team-members-images/Sheriffdeen Oladimeji.png", instagram:"", x:"", linkedin:""},
-    {name:"Yusuf Adua", position:"Sponsorship& Budgeting Team", image:"/team-members-images/Yusuf Adua.png", instagram:"", x:"", linkedin:""},
+    {name:"Yusuf Adua", position:"Sponsorship & Budgeting Team", image:"/team-members-images/Yusuf Adua.png", instagram:"", x:"", linkedin:""},
     {name:"Afolabi Maryam", position:"UI/UX Designer & Community Manager", image:"", instagram:"", x:"", linkedin:""},
     {name:"Ridwan Abdulkareem", position:"Curation Team & Web Developer", image:"", instagram:"", x:"", linkedin:""},
     {name:"Abulaleem Lateef", position:"Event Manager", image:"", instagram:"", x:"", linkedin:""},
