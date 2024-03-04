@@ -3,11 +3,11 @@
 import Button from "@/components/Button";
 import Logo from "@/components/Logo";
 import { headerLinks } from "@/utils/routepaths";
-import { usePathname  } from "next/navigation";
-import Link from "next/link"
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 import tw from "twin.macro";
 
-const DesktopNav = () => {
+const DesktopNav = ({ isScrolled }: IHeaderProps) => {
   const path = usePathname();
   const isHome = path === "/";
 
@@ -17,19 +17,21 @@ const DesktopNav = () => {
       css={[isHome && tw`text-white`]}
     >
       <Link href="/">
-        <Logo $light={isHome} />
+        <Logo $light={isHome || isScrolled} />
       </Link>
 
       <ul tw="flex flex-row gap-[2rem] xl:gap-[3rem]">
         {headerLinks.map((link) => {
-          let href = link.href;
+          let href = link.href,
+            isActive = path === link.href;
           return (
             <li
               key={link.title}
               css={[
                 tw`hocus:(text-primary)`,
-                path === link.href &&
+                isActive &&
                   tw`text-primary font-semibold underline decoration-2 underline-offset-[1.5rem]`,
+                isScrolled && isActive && tw`text-white`,
               ]}
             >
               <a href={href}>{link.title}</a>

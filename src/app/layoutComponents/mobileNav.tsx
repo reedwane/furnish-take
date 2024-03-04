@@ -10,7 +10,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components";
 
-const MobileNav = () => {
+const MobileNav = ({ isScrolled }: IHeaderProps) => {
   const [menuOpen, setMenu] = useState(false);
   const pathName = usePathname();
   const isHome = pathName === "/";
@@ -43,13 +43,20 @@ const MobileNav = () => {
         css={[tw`flex justify-between text-primary`, menuOpen && tw`px-8 py-4`]}
       >
         <Link href="/">
-          <Logo $light={isHome && !menuOpen} />
+          <Logo
+            containerStyles={tw`max-sm:(min-w-[40px] w-[40px])`}
+            $light={(isHome || isScrolled) && !menuOpen}
+          />
         </Link>
 
         <button
           title="mobile-menu-button"
           onClick={toggleMenu}
-          css={[isHome && !menuOpen ? tw`text-white` : tw`text-secondary`]}
+          css={[
+            (isHome || isScrolled) && !menuOpen
+              ? tw`text-white`
+              : tw`text-secondary`,
+          ]}
         >
           {menuOpen ? <IoCloseOutline size={30} /> : <FiMenu size={30} />}
         </button>

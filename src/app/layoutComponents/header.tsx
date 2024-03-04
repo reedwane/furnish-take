@@ -29,13 +29,13 @@ const Header = () => {
     >
       <Maxwidth
         css={[
-          tw`flex items-center font-medium p-5 justify-start md:(justify-between) xl:(px-0) z-[10] transition-all relative`,
+          tw`flex items-center font-medium p-2 md:p-5 justify-start md:(justify-between) xl:(px-0) z-[10] transition-all relative`,
           isScrolled && tw`sticky top-0`,
         ]}
       >
-        <MobileNav />
+        <MobileNav isScrolled={isScrolled} />
 
-        <DesktopNav />
+        <DesktopNav isScrolled={isScrolled} />
       </Maxwidth>
     </header>
   );

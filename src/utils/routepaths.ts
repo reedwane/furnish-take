@@ -15,7 +15,7 @@ export const routePaths = {
     path: "/book-launch",
   },
   contact: {
-    path: "contact",
+    path: "/contact",
   },
   faq: {
     path: "faqs",
