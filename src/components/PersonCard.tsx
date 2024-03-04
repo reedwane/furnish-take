@@ -27,10 +27,10 @@ const PersonCard = ({ css, person, ...props }: IPersonCard) => {
         <div tw="bg-primary rounded-t-lg min-h-[200px] text-secondary space-y-2 text-left flex-1 relative">
           <Image src={person?.image || "/avatar.png"} alt={person?.name} fill tw="object-contain" />
           <div tw="flex flex-col gap-4 m-4 justify-center relative h-full mb-6 w-max">
-          {"instagram, x, linkedin".split(", ").map((social)=>{
+          {"instagram, x, linkedin".split(", ").map((social,index)=>{
               if (person?.[social]){
                 return (
-                  <a href={person[social]} target="_blank" tw="hover:opacity-50">
+                  <a href={person[social]} target="_blank" tw="hover:opacity-50" key={index}>
                     <Image src={`/icons/${social}.svg`} width={30} height={30} alt={`${social} icon`}/>
                   </a>
                 )
