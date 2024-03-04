@@ -7,6 +7,13 @@
   --color-secondary: #001f3f;
 }
 
+.heading-title {
+    @apply text-lg md:text-4xl text-primaryLight
+}
+.heading-subtitle {
+    @apply text-4xl md:text-6xl 
+}
+
 html {
   scroll-behavior: smooth;
   color: #454545;

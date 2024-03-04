@@ -8,11 +8,11 @@ const BookLaunch = () => {
   return (
     <div tw="space-y-12">
       <div tw="bg-secondary text-white border-b-2 border-b-secondary bg-[url('/waves.png')] bg-cover bg-center">
-        <Maxwidth tw="p-8 px-5 md:(flex-row justify-start gap-20) xl:(px-0) uppercase">
+        <Maxwidth tw="py-12 px-5 md:(flex-row justify-start gap-20) xl:(px-0) uppercase">
           <Heading $variant="h4" as="h1">
-            <span tw="text-primaryLight">Book Launch</span>
+            <span className="heading-title">Book Launch:</span>
             <br/>
-            <span tw="text-4xl">
+            <span className="heading-subtitle">
               BEFORE YOU FALL IN LOVE
             </span>
           </Heading>

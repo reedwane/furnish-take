@@ -29,11 +29,11 @@ function toggleFaq(index:number){
   return (
     <div tw="space-y-12 pb-12">
       <div tw="bg-secondary text-white border-b-2 border-b-secondary bg-[url('/waves.png')] bg-cover bg-center">
-        <Maxwidth tw="p-8 px-5 md:(flex-row justify-start gap-20) xl:(px-0) uppercase">
+        <Maxwidth tw="py-12 px-5 md:(flex-row justify-start gap-20) xl:(px-0) uppercase">
           <Heading $variant="h4" as="h1">
-            <span tw="text-lg text-primaryLight">FREQUENTLY </span>
+            <span className="heading-title">FREQUENTLY </span>
             <br/>
-            <span tw="text-4xl">ASKED QUESTIONS</span>
+            <span className="heading-subtitle">ASKED QUESTIONS</span>
           </Heading>
         </Maxwidth>
       </div>

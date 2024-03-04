@@ -30,11 +30,11 @@ const ContactPage = () => {
   return (
     <div tw="space-y-12 pb-12">
       <div tw="bg-secondary text-white border-b-2 border-b-secondary bg-[url('/waves.png')] bg-cover bg-center">
-        <Maxwidth tw="p-8 px-5 md:(flex-row justify-start gap-20) xl:(px-0) uppercase">
+        <Maxwidth tw="py-12 px-5 md:(flex-row justify-start gap-20) xl:(px-0) uppercase">
           <Heading $variant="h4" as="h1">
-            <span tw="text-4xl text-primaryLight">Contact us</span>
+            <span className="heading-subtitle" tw="text-primaryLight">Contact us</span>
             <br/>
-            <span tw="text-lg">Any question or remarks? Just write us a message!</span>
+            <span  >Any question or remarks? Just write us a message!</span>
           </Heading>
         </Maxwidth>
       </div>
