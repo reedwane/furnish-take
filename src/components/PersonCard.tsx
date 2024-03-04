@@ -15,7 +15,10 @@ interface IPersonCard extends HTMLProps<HTMLDivElement> {
   }
 }
 
-const PersonCard = ({ css, person, ...props }: IPersonCard) => {
+
+    const _person = {name:"Oladimeji Hassan", position:"", image:"", instagram:"", x:"", linkedin:""}
+
+const PersonCard = ({ css, person=_person, ...props }: IPersonCard) => {
   return (
     <>
       <div
