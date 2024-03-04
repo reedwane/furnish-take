@@ -37,7 +37,7 @@ const OurTeamPage = () => {
       <section>
         <Maxwidth tw="py-8 space-y-8">
           <Paragraph>
-            Meet our diverze team of  designers, developers, writers, event managers working together to make the  Deen Networking Summit a success.
+            Meet our diverse team of  designers, developers, writers, event managers working together to make the  Deen Networking Summit a success.
           </Paragraph>
           <ul tw="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {team_members.map((team_member, index)=>(
