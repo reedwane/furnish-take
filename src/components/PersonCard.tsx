@@ -5,13 +5,13 @@ import { Heading, secondaryShadow } from "./heading";
 import Image from "next/image";
 
 interface IPersonCard extends HTMLProps<HTMLDivElement> {
-  person: {
+  person?: {
     name: string;
     position: string;
     image: string;
-    instagram?: string;
-    x?: string;
-    linkedin?: string;
+    instagram: string;
+    x: string;
+    linkedin: string;
   }
 }
 
@@ -31,8 +31,10 @@ const PersonCard = ({ css, person=_person, ...props }: IPersonCard) => {
           <Image src={person?.image || "/avatar.png"} alt={person?.name} fill tw="object-contain" />
           <div tw="flex flex-col gap-4 m-4 justify-center relative h-full mb-6 w-max">
           {"instagram, x, linkedin".split(", ").map((social,index)=>{
+              //@ts-ignore
               if (person?.[social]){
                 return (
+              //@ts-ignore
                   <a href={person[social]} target="_blank" tw="hover:opacity-50" key={index}>
                     <Image src={`/icons/${social}.svg`} width={30} height={30} alt={`${social} icon`}/>
                   </a>
