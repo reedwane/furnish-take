@@ -92,7 +92,7 @@ const MobileNav = ({ isScrolled }: IHeaderProps) => {
             </Link>
           ))}
 
-          <Button tw="mt-4">GET TICKETS</Button>
+          <Button as="a" target="_blank" href="https://tix.africa/buy/the-deen-networking-summit" tw="mt-4">GET TICKETS</Button>
         </ul>
       </nav>
     </div>

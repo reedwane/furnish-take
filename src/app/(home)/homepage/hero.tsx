@@ -42,7 +42,7 @@ const HomeHero = () => {
           </Paragraph>
 
           <div tw="flex flex-col gap-6 md:(flex-row) lg:(gap-[88px])">
-            <Button $shadow="light">GET TICKETS</Button>
+            <Button as="a" target="_blank" href="https://tix.africa/buy/the-deen-networking-summit" $shadow="light">GET TICKETS</Button>
             <Button $shadow="light">BECOME A SPONSOR</Button>
           </div>
         </div>
