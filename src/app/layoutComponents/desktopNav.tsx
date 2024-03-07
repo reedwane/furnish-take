@@ -40,7 +40,7 @@ const DesktopNav = ({ isScrolled }: IHeaderProps) => {
         })}
       </ul>
 
-      <Button $shadow={isHome ? "light" : "dark"}>GET TICKETS</Button>
+      <Button as="a" target="_blank" href="https://tix.africa/buy/the-deen-networking-summit" $shadow={isHome ? "light" : "dark"}>GET TICKETS</Button>
     </nav>
   );
 };
