@@ -11,9 +11,9 @@ interface IPersonCard extends HTMLProps<HTMLDivElement> {
     name: string;
     position: string;
     image: string;
-    instagram: string;
-    x: string;
-    linkedin: string;
+    instagram?: string;
+    x?: string;
+    linkedin?: string;
   };
 }
 
