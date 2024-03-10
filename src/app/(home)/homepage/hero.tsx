@@ -2,12 +2,14 @@
 
 import { Button, Heading, Maxwidth, Paragraph } from "@/components";
 import useCountdown from "@/utils/hooks/useCountdown";
+import { routePaths } from "@/utils/routepaths";
 import { zonedTimeToUtc } from "date-fns-tz";
+import Link from "next/link";
 
 const HomeHero = () => {
   const targetTimeZone = "Africa/Lagos"; // WAT is Africa/Lagos time zone
   const watDateTime = zonedTimeToUtc(
-    new Date(2024, 3, 20, 9, 0, 0),
+    new Date(2024, 3, 13, 9, 0, 0),
     targetTimeZone
   );
   const { days, hours, minutes, seconds } = useCountdown(watDateTime);
@@ -42,8 +44,17 @@ const HomeHero = () => {
           </Paragraph>
 
           <div tw="flex flex-col gap-6 md:(flex-row) lg:(gap-[88px])">
-            <Button as="a" target="_blank" href="https://tix.africa/buy/the-deen-networking-summit" $shadow="light">GET TICKETS</Button>
-            <Button $shadow="light">BECOME A SPONSOR</Button>
+            <Button
+              as="a"
+              target="_blank"
+              href="https://tix.africa/buy/the-deen-networking-summit"
+              $shadow="light"
+            >
+              GET TICKETS
+            </Button>
+            <Button as={Link} href={routePaths.speakers.path} $shadow="light">
+              BECOME A SPONSOR
+            </Button>
           </div>
         </div>
       </Maxwidth>
@@ -55,7 +66,7 @@ const HomeHero = () => {
               SEE YOU ON
             </Paragraph>
             <Paragraph tw="max-sm:text-[8px]">
-              April 20, Adebisi Hall, Ibadan, Nigeria.
+              April 13, Adebisi Hall, Ibadan, Nigeria.
             </Paragraph>
           </div>
 
