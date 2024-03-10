@@ -2,6 +2,7 @@
 
 import { Button, FancyHeader, Heading, Maxwidth, Paragraph } from "@/components";
 import PersonCard from "@/components/PersonCard";
+import { team_members } from "@/utils/People";
 
 
 const BookLaunch = () => {
@@ -71,7 +72,7 @@ const BookLaunch = () => {
                   Abass is a Nigerian writer and published author. A graduate of Surveying and Geoinformatics from the Federal University of Technology Akure. He's an award-winning writer and public speaker who has a strong flair for clear communication and result-oriented messaging.
                 </Paragraph>
                 <div tw="md:hidden">
-                  <PersonCard />
+                  <PersonCard person={team_members[0]} />
                 </div>
               </div>
               <Paragraph>
@@ -82,7 +83,7 @@ const BookLaunch = () => {
               </Paragraph>
             </div>
             <div tw="max-md:hidden max-w-[256px] mx-auto">
-              <PersonCard/>
+              <PersonCard person={team_members[0]} />
             </div>
           </div>
         </Maxwidth>
