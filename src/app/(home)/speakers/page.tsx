@@ -1,3 +1,5 @@
+'use client'
+
 import { Heading, Maxwidth, Paragraph } from "@/components";
 import PersonCard from "@/components/PersonCard";
 import { speakers } from "@/utils/People";
