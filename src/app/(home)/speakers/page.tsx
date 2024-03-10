@@ -7,15 +7,18 @@ import PersonCard from "@/components/PersonCard";
 const SpeakersPage = () => {
   const speakers = [
     {
-      "name": "Chief Saheed Oladele",
-      image: "/speakers/Chief Saheed Oladele.png"
-    },
-    {
       "name": "Dr. Sanusi Lafiagi",
+      position: "Writer, Teacher, Counselor, and Brand Influencer",
       image: "/speakers/Dr. Sanusi Lafiagi.png"
     },
     {
+      "name": "Chief Saheed Oladele",
+      position: "Chairman at Erudite Group, and The Baameko of Ibadan Land",
+      image: "/speakers/Chief Saheed Oladele.png"
+    },
+    {
       "name": "Sanni Hassan",
+      position: "Bespoke Tailor and Professional Event Host",
       image: "/speakers/Sanni Hassan.png"
     },
   ]
