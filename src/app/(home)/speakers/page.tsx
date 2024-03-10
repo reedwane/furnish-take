@@ -5,6 +5,20 @@ import PersonCard from "@/components/PersonCard";
 
 
 const SpeakersPage = () => {
+  const speakers = [
+    {
+      "name": "Chief Saheed Oladele",
+      image: "/speakers/Chief Saheed Oladele.png"
+    },
+    {
+      "name": "Dr. Sanusi Lafiagi",
+      image: "/speakers/Dr. Sanusi Lafiagi.png"
+    },
+    {
+      "name": "Sanni Hassan",
+      image: "/speakers/Sanni Hassan.png"
+    },
+  ]
   return (
     <div>
       <div tw="bg-secondary text-white border-b-2 border-b-secondary bg-[url('/waves.png')] bg-cover bg-center">
@@ -24,9 +38,9 @@ const SpeakersPage = () => {
             From visionary founders to accomplished business leaders and esteemed Islamic scholars. TDNS gathers an exceptional lineup of speakers, each offering unique insights and expertise.
           </Paragraph>
           <ul tw="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[...Array(12)].map((_, index)=>(
+            {speakers.map((person, index)=>(
               <li key={index} >
-                <PersonCard />
+                <PersonCard person={person} />
               </li>
             ))}
           </ul>
