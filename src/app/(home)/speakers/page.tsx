@@ -1,27 +1,9 @@
-"use client";
-
-import { Button, Heading, Maxwidth, Paragraph } from "@/components";
+import { Heading, Maxwidth, Paragraph } from "@/components";
 import PersonCard from "@/components/PersonCard";
+import { speakers } from "@/utils/People";
 
 
 const SpeakersPage = () => {
-  const speakers = [
-    {
-      "name": "Dr. Sanusi Lafiagi",
-      position: "Writer, Teacher, Counselor, and Brand Influencer",
-      image: "/speakers/Dr. Sanusi Lafiagi.png"
-    },
-    {
-      "name": "Chief Saheed Oladele",
-      position: "Chairman at Erudite Group, and The Baameko of Ibadan Land",
-      image: "/speakers/Chief Saheed Oladele.png"
-    },
-    {
-      "name": "Sanni Hassan",
-      position: "Bespoke Tailor and Professional Event Host",
-      image: "/speakers/Sanni Hassan.png"
-    },
-  ]
   return (
     <div>
       <div tw="bg-secondary text-white border-b-2 border-b-secondary bg-[url('/waves.png')] bg-cover bg-center">
