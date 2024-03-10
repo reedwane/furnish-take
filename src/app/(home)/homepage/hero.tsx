@@ -52,7 +52,7 @@ const HomeHero = () => {
             >
               GET TICKETS
             </Button>
-            <Button as={Link} href={routePaths.speakers.path} $shadow="light">
+            <Button as={Link} href={routePaths.sponsor.path} $shadow="light">
               BECOME A SPONSOR
             </Button>
           </div>
