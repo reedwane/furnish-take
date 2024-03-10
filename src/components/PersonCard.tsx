@@ -56,6 +56,7 @@ const PersonCard = ({ css, person = _person, ...props }: IPersonCard) => {
                 return (
                   //@ts-ignore
                   <a
+                    //@ts-ignore
                     href={person[social]}
                     target="_blank"
                     tw="hover:opacity-50"
