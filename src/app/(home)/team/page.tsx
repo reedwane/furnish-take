@@ -8,7 +8,7 @@ const OurTeamPage = () => {
     {
       name: "Abass Abdul-Azeez",
       position: "Convener",
-      image: "",
+      image: "/team/abiola.png",
       instagram: "",
       x: "",
       linkedin: "",
@@ -16,7 +16,7 @@ const OurTeamPage = () => {
     {
       name: "Sheriffdeen Oladimeji",
       position: "Communications Team",
-      image: "/team-members-images/Sheriffdeen Oladimeji.png",
+      image: "/team/sherif.png",
       instagram: "",
       x: "",
       linkedin: "",
@@ -24,7 +24,7 @@ const OurTeamPage = () => {
     {
       name: "Yusuf Adua",
       position: "Sponsorship & Budgeting Team",
-      image: "/team-members-images/Yusuf Adua.png",
+      image: "/team/adua.png",
       instagram: "",
       x: "",
       linkedin: "",
@@ -40,7 +40,7 @@ const OurTeamPage = () => {
     {
       name: "Ridwan Abdulkareem",
       position: "Curation Team & Web Developer",
-      image: "",
+      image: "/team/ridwan.png",
       instagram: "",
       x: "",
       linkedin: "",
@@ -48,7 +48,7 @@ const OurTeamPage = () => {
     {
       name: "Abulaleem Lateef",
       position: "Event Manager",
-      image: "",
+      image: "/team/lateef.png",
       instagram: "",
       x: "",
       linkedin: "",
@@ -56,7 +56,7 @@ const OurTeamPage = () => {
     {
       name: "Oyero Abiodun",
       position: "Sponsorship",
-      image: "/team-members-images/Oyero Abiodun.png",
+      image: "/team/oyero.png",
       instagram: "",
       x: "",
       linkedin: "",
@@ -64,7 +64,7 @@ const OurTeamPage = () => {
     {
       name: "Hasanah Bolaji",
       position: "Communications Team",
-      image: "/team-members-images/Hasanah Bolaji.png",
+      image: "/team/bolaji.png",
       instagram: "",
       x: "",
       linkedin: "",
@@ -72,7 +72,7 @@ const OurTeamPage = () => {
     {
       name: "Summayyah Adenle",
       position: "Curation Team",
-      image: "/team-members-images/Summayyah Adenle.png",
+      image: "/team/adenle.png",
       instagram: "",
       x: "",
       linkedin: "",
@@ -80,7 +80,7 @@ const OurTeamPage = () => {
     {
       name: "Oluwaseun Ojo",
       position: "Event Manager",
-      image: "",
+      image: "/team/ojo.png",
       instagram: "",
       x: "",
       linkedin: "",
