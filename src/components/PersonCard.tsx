@@ -70,7 +70,7 @@ const PersonCard = ({ css, person = _person, ...props }: IPersonCard) => {
           </div>
         </div>
 
-        <div tw="min-w-[300px] bg-lightGrey rounded-b-lg text-secondary p-4 space-y-2 text-left min-h-[73px] md:(min-h-[120px])">
+        <div tw="max-md:min-w-[250px] bg-lightGrey rounded-b-lg text-secondary p-4 space-y-2 text-left min-h-[73px] md:(min-h-[120px])">
           <Heading $variant="h4" as="h2">
             {person?.name}
           </Heading>
