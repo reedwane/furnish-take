@@ -15,11 +15,7 @@ const MeetSpeakers = () => {
       
       <ul tw="flex gap-7 overflow-x-auto pt-10 pr-10 pb-3 md:(gap-10 pb-7) lg:(pt-16)">
         {speakers.map((person, index)=>(
-          <li key={index} >
-            <div tw="max-w-[400px]">
-              <PersonCard person={person} />
-            </div>
-          </li>
+          <PersonCard person={person} key={index}/>
         ))}
       </ul>
 
