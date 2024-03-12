@@ -80,7 +80,7 @@ export const team_members = [
     linkedin: "",
   },
   {
-    name: "Mojeed Abiola",
+    name: "Mojeed Ajibola",
     position: "Event Manager",
     image: "",
     instagram: "",
