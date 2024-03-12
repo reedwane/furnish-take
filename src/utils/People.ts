@@ -2,7 +2,7 @@ export const team_members = [
   {
     name: "Abass Abdul-Azeez",
     position: "Convener",
-    image: "/team/abiola.png",
+    image: "/team/Abass.png",
     instagram: "",
     x: "",
     linkedin: "",
@@ -10,7 +10,7 @@ export const team_members = [
   {
     name: "Sheriffdeen Oladimeji",
     position: "Communications Team",
-    image: "/team/sherif.png",
+    image: "/team/Sherif.png",
     instagram: "",
     x: "",
     linkedin: "",
@@ -26,7 +26,7 @@ export const team_members = [
   {
     name: "Afolabi Maryam",
     position: "UI/UX Designer & Community Manager",
-    image: "",
+    image: "/team/Maryam.png",
     instagram: "",
     x: "",
     linkedin: "",
@@ -34,7 +34,7 @@ export const team_members = [
   {
     name: "Ridwan Abdulkareem",
     position: "Curation Team & Web Developer",
-    image: "/team/ridwan.png",
+    image: "/team/Ridwan.png",
     instagram: "",
     x: "",
     linkedin: "",
@@ -50,7 +50,7 @@ export const team_members = [
   {
     name: "Oyero Abiodun",
     position: "Sponsorship",
-    image: "/team/oyero.png",
+    image: "/team/Oyero.png",
     instagram: "",
     x: "",
     linkedin: "",
@@ -58,7 +58,7 @@ export const team_members = [
   {
     name: "Hasanah Bolaji",
     position: "Communications Team",
-    image: "/team/bolaji.png",
+    image: "/team/Bolaji.png",
     instagram: "",
     x: "",
     linkedin: "",
@@ -66,7 +66,7 @@ export const team_members = [
   {
     name: "Summayyah Adenle",
     position: "Curation Team",
-    image: "/team/adenle.png",
+    image: "/team/Adenle.png",
     instagram: "",
     x: "",
     linkedin: "",
@@ -74,7 +74,7 @@ export const team_members = [
   {
     name: "Oluwaseun Ojo",
     position: "Event Manager",
-    image: "/team/ojo.png",
+    image: "/team/Ojo.png",
     instagram: "",
     x: "",
     linkedin: "",
@@ -90,14 +90,14 @@ export const team_members = [
   {
     name: "Rasheed Mudashir",
     position: "Web Developer",
-    image: "",
+    image: "/team/Rasheed.png",
     instagram: "",
     x: "",
     linkedin: "",
   },
   {
     name: "Jaiye Abdul",
-    position: "brand Designer",
+    position: "Brand Designer",
     image: "",
     instagram: "",
     x: "",
