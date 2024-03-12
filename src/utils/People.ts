@@ -109,16 +109,16 @@ export const speakers = [
   {
     "name": "Dr. Sanusi Lafiagi",
     position: "Writer, Teacher, Counselor, and Brand Influencer",
-    image: "/speakers/Dr. Sanusi Lafiagi.png"
+    image: "/speakers/Sanusi.png"
   },
   {
     "name": "Chief Saheed Oladele",
     position: "Chairman at Erudite Group, and The Baameko of Ibadan Land",
-    image: "/speakers/Chief Saheed Oladele.png"
+    image: "/speakers/Saheed.png"
   },
   {
     "name": "Sanni Hassan",
     position: "Bespoke Tailor and Professional Event Host",
-    image: "/speakers/Sanni Hassan.png"
+    image: "/speakers/Sanni.png"
   },
 ]
