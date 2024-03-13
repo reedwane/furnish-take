@@ -29,12 +29,12 @@ const _person = {
 const PersonCard = ({ css, person = _person, ...props }: IPersonCard) => {
   return (
     <>
+
       <div
-        as="div"
-        tw="!p-0 w-full max-w-[300px] aspect-square md:(max-w-[493px]) mx-auto divide-y divide-secondary border border-secondary rounded-lg flex flex-col"
+        tw="!p-0 min-w-[300px] w-full max-w-[300px] aspect-square md:(max-w-[493px]) mx-auto divide-y divide-secondary border border-secondary rounded-lg flex flex-col"
         css={[secondaryShadow, css]}
         {...props}
-      >
+        >
         <div tw="rounded-t-lg min-h-[200px] text-secondary space-y-2 text-left flex-1 relative">
           <Image
             src={person?.image || "/avatar.png"}
@@ -42,7 +42,8 @@ const PersonCard = ({ css, person = _person, ...props }: IPersonCard) => {
             fill
             tw="object-contain"
           />
-          <div tw="flex flex-col gap-4 m-4 justify-center relative h-full mb-6 w-max">
+
+          <div tw="flex flex-col gap-4 m-4 justify-center relative h-full mb-6">
             {"instagram, x, linkedin".split(", ").map((social, index) => {
               const Icon =
                 social === "instagram"
@@ -70,7 +71,7 @@ const PersonCard = ({ css, person = _person, ...props }: IPersonCard) => {
           </div>
         </div>
 
-        <div tw="max-md:min-w-[250px] bg-lightGrey rounded-b-lg text-secondary p-4 space-y-2 text-left min-h-[73px] md:(min-h-[120px])">
+        <div tw="bg-lightGrey rounded-b-lg text-secondary p-4 space-y-2 text-left min-h-[73px] md:(min-h-[120px])">
           <Heading $variant="h4" as="h2">
             {person?.name}
           </Heading>
