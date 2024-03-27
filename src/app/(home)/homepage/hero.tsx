@@ -65,8 +65,8 @@ const HomeHero = () => {
             <Paragraph tw="max-sm:text-[8px] w-full border-b-2 border-primaryLight">
               SEE YOU ON
             </Paragraph>
-            <Paragraph tw="max-sm:text-[8px]">
-              April 13, Adebisi Hall, Ibadan, Nigeria.
+            <Paragraph tw="max-sm:text-[8px] leading-3 max-w-[149px] sm:(max-w-[296px] leading-6)">
+              April 13, New Lecture Theater, Department of Nursing, UI, Ibadan.
             </Paragraph>
           </div>
 

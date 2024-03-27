@@ -7,9 +7,9 @@ import logo from "/public/logo.png";
 const MeetSponsors = () => {
   const sponsors = [
     {
-      image: "/logo.png",
-      name: "",
-      url: "/",
+      image: "/partners/msci.jpg",
+      name: "MSCI",
+      url: "https://msci.com.ng/",
     },
     {
       image: "/partners/rifaaq-fav.png",
@@ -19,7 +19,7 @@ const MeetSponsors = () => {
     {
       image: "/logo.png",
       name: "",
-      url: "/",
+      url: "#",
     },
   ];
   return (
@@ -31,11 +31,11 @@ const MeetSponsors = () => {
           <li key={index}>
             <a
               href={sponsor.url}
-              target="_blank"
+              target={sponsor.url === "#" ? "_self" : "_blank"}
               rel="noopener noreferrer"
               tw="flex flex-col items-center"
             >
-              <div tw="relative w-[58px] h-[58px]  max-w-[58px] lg:(max-w-[132px])">
+              <div tw="relative h-[58px] w-[58px] lg:(w-[132px] h-[161px])">
                 <Image
                   src={sponsor.image}
                   alt="partner"

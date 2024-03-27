@@ -3,9 +3,11 @@ export const team_members = [
     name: "Abass Abdul-Azeez",
     position: "Convener",
     image: "/team/Abass.png",
-    instagram: "",
-    x: "",
-    linkedin: "",
+    instagram:
+      "https://www.instagram.com/abass_biola?igsh=MTJtZmdsenM4am96bA==",
+    x: "https://x.com/AbassAbiolaA?t=jRc9U6Um-CawH6mwq7MV9g&s=09",
+    linkedin:
+      "https://www.linkedin.com/in/biola-abass?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     name: "Sheriffdeen Oladimeji",
@@ -28,16 +30,18 @@ export const team_members = [
     position: "UI/UX Designer & Community Manager",
     image: "/team/Maryam.png",
     instagram: "",
-    x: "",
+    x: "https://x.com/Oladoyin0?t=z8d3E2-WoFh5PU-OFdzSoQ&s=09",
     linkedin: "",
+    other: "https://www.behance.net/afolabimaryam",
   },
   {
     name: "Ridwan Abdulkareem",
     position: "Curation Team & Web Developer",
     image: "/team/Ridwan.png",
-    instagram: "",
-    x: "",
-    linkedin: "",
+    instagram: "https://www.instagram.com/elegant_ak?igsh=dHN3M2RpOTQwbzhy",
+    x: "https://twitter.com/RidwanGboyegaAK",
+    linkedin: "https://www.linkedin.com/in/ridwan-abdulkareem",
+    other: "https://reedwane.com",
   },
   {
     name: "Abulaleem Lateef",
@@ -51,9 +55,9 @@ export const team_members = [
     name: "Oyero Abiodun",
     position: "Sponsorship",
     image: "/team/Oyero.png",
-    instagram: "",
-    x: "",
-    linkedin: "",
+    instagram: "https://www.instagram.com/excellent_629",
+    x: "https://www.x.com/excellent_629",
+    linkedin: "https://www.linkedin.com/in/oyeroabiodun",
   },
   {
     name: "Hasanah Bolaji",
@@ -82,7 +86,7 @@ export const team_members = [
   {
     name: "Mojeed Ajibola",
     position: "Event Manager",
-    image: "",
+    image: "/team/ajibola.png",
     instagram: "",
     x: "",
     linkedin: "",
@@ -98,27 +102,41 @@ export const team_members = [
   {
     name: "Jaiye Abdul",
     position: "Brand Designer",
-    image: "",
+    image: "/team/jaiye.png",
+    instagram: "www.instagram.com/jaiye_abdul",
+    x: "x.com/jaiye_abdul",
+    linkedin:
+      "https://www.linkedin.com/in/abdulraqib-durojaiye-aa52b117b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    name: "Kawthar Abdulmojeed",
+    position: "Communications Team",
+    image: "/team/kawthar.png",
     instagram: "",
     x: "",
     linkedin: "",
   },
 ];
 
-export const speakers = [ 
+export const speakers = [
   {
-    "name": "Dr. Sanusi Lafiagi",
+    name: "Dr. Sanusi Lafiagi",
     position: "Writer, Teacher, Counselor, and Brand Influencer",
-    image: "/speakers/Sanusi.png"
+    image: "/speakers/Sanusi.png",
   },
   {
-    "name": "Chief Saheed Oladele",
+    name: "Chief Saheed Oladele",
     position: "Chairman at Erudite Group, and The Baameko of Ibadan Land",
-    image: "/speakers/Saheed.png"
+    image: "/speakers/Saheed.png",
   },
   {
-    "name": "Sanni Hassan",
+    name: "Sanni Hassan",
     position: "Bespoke Tailor and Professional Event Host",
-    image: "/speakers/Sanni.png"
+    image: "/speakers/Sanni.png",
   },
-]
+  {
+    name: "Dr. Mrs Kola Aderoju",
+    position: "Lecturer, Kola Daisi University",
+    image: "/speakers/aderoju.png",
+  },
+];
