@@ -125,6 +125,11 @@ export const speakers = [
     image: "/speakers/Sanusi.png",
   },
   {
+    name: "Dr. Sulaiman Ogunmuyiwa",
+    position: "Lead Coach, M-Solution Consulting International",
+    image: "/speakers/ogunmuyiwa.png",
+  },
+  {
     name: "Chief Saheed Oladele",
     position: "Chairman at Erudite Group, and The Baameko of Ibadan Land",
     image: "/speakers/Saheed.png",
@@ -138,5 +143,10 @@ export const speakers = [
     name: "Dr. Mrs Kola Aderoju",
     position: "Lecturer, Kola Daisi University",
     image: "/speakers/aderoju.png",
+  },
+  {
+    name: "Mutiat Olagoke",
+    position: "Certified Business and Self Concept Coach",
+    image: "/speakers/olagoke.png",
   },
 ];
