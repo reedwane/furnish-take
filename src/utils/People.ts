@@ -127,7 +127,7 @@ export const speakers = [
   {
     name: "Dr. Sulaiman Ogunmuyiwa",
     position: "Lead Coach, M-Solution Consulting International",
-    image: "/speakers/ogunmuyiwa.png",
+    image: "/speakers/ogunmuyiwa.jpeg",
   },
   {
     name: "Chief Saheed Oladele",
